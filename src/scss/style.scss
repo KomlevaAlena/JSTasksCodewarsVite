@@ -5,10 +5,36 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(255, 192, 203, 1);
+    margin: 0 auto;
 
     // .test {
     //     width: 100px;
     //     height: 100px;
     //     background-color: variables.$color-primary;
     // }
+
+    .add_p {
+        margin: 0 auto;
+        width: 200px;
+        padding: 50px;
+        display: none;
+        color: rgba(158, 0, 250, 1);
+        text-align: center;
+    }
+    .del_p {
+        margin: 0 auto;
+        width: 200px;
+        padding: 50px;
+        display: none;
+        color: rgba(158, 0, 250, 1);
+        text-align: center;
+    }
+
+    .del_p.del {
+        display: block;
+    }
+
+    .add_p.add {
+        display: block;
+    }
 }
