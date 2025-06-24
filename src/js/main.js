@@ -5,6 +5,23 @@ import {mergeArrays} from './tasks/mergeTwoArrays';
 import {evenOrOdd} from './tasks/evenodd';
 import {sortByValueAndIndex} from './tasks/arrsortvalueindex';
 import {warnTheSheep} from './tasks/wolfsheep';
+import {createArray} from './standart-action/arrays';
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  window.addEventListener('load', () => {
+    createArray();
+    // //mobileMenu.init();
+    // sliderHero.init();
+    // sliderTours.init();
+    // sliderTraining.init();
+    // sliderReviews.init();
+    // sliderAdvantages();
+  });
+});
+
+
+
 
 console.log(calculateTip(300, 'Good'));
 console.log(squareSum([1, 2, 3]));
