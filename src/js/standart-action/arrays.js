@@ -2,7 +2,7 @@ export const createArray = () => {
     const simpleArray = []; //создали массив
     simpleArray.push(25); //добавили объект в конец массива
     // 2. Конструктор Array (используется реже)
-    let twoArray = new Array(1, 2, 3);
+    let twoArray = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
 
     simpleArray.push(15);
     simpleArray.unshift(31); //добавили объект в начало массива
@@ -32,10 +32,20 @@ export const createArray = () => {
 
     const merged = [...simpleArray, ...twoArray]; // (объединение массивов)
 
+    const sorted = [3, 1, 2].sort((a, b) => a - b); // Сортировка (мутирует исходный)
+
+    const joined = twoArray.join(', ');//(преобразование в строку)
+
+    const splitArray = "Hello".split('');//(преобразование в массив)
+
+    const [first, second] = twoArray;//(деструктуризация не изменяет исходный массив) первый и второй
+    const [, , third] = twoArray; // (деструктуризация) Пропуск элементов
+    console.log(third);
 
     // console.log(doubled);
     // console.log(evens);
-    console.log(simpleArray);
-    console.log(twoArray);
-    console.log(merged);
+    // console.log(simpleArray);
+    // console.log(twoArray);
+    // console.log(splitArray);
+    
 };
